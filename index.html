@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/stylesheet.css">
+        <title>Madlib Lecture Exercise v1</title>
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <h1>Madlibs!</h1>
+            </div>
+        </header>
+        <main>
+            <div class="wrapper">
+                <section>
+                    <form id="generateMadlib" action="#" method="POST">
+                        <label>
+                            My name:
+                            <input type="text" name="myName" id="myName" placeholder="What is your name?" />
+                        </label>
+                        <!-- you can also point <label> at the id : 
+                            <label for="myName">My name</label>
+                            <input type="text" name="myName" id="myName" placeholder="What is your name?" />-->
+                        <label>
+                            My Favorite Subject:
+                            <input type="text" name="mySubject" id="mySubject" placeholder="What is your favorite subject?" />
+                        </label>
+                        <button type="submit">Generate MadLib</button>
+                    </form>
+                </section>
+                <section> <!--We're going to create two DOM elements, or, "nodes" -->
+                    <p>My name is <span id="nameResponse" class="madlib_placeholder"></span>and my favorite subject is <span id="subjectResponse" class="madlib_placeholder"></span>.</p>
+                </section>
+            </div>
+        </main>
+    </body>
+    <footer></footer>
+    <script src="js/scripts.js"></script>
+</html>

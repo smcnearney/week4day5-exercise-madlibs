@@ -1,0 +1,39 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 
+    "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    position: relative;
+    margin: 0;
+    min-height: 100vh;
+}
+
+section {
+    display: block;
+    width: 100%;
+    margin: 16px auto;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    width: 100%;
+    margin: auto;
+}
+
+.madlib_placeholder {
+    border-bottom: 1px solid #333;
+    display: inline-block; /* hey, stay inline but take up only the space you're allowed */
+    min-height: 19px;
+    min-width: 130px;
+    padding: 1px 4px 2px;
+}
